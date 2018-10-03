@@ -58,6 +58,8 @@ sonidos = choice [
         try (string "unas chelas" >> espacios >> return "dist" ),
         try (string "mi germa" >> espacios >> return "hh:1" ),
         try (string "vamos a" >> espacios >> return "mash2"),
+        try (string "sapear" >> espacios >> return "sn" ),
+        try (string "ahi hay mano negra) >> return "arpy"),
         try (descartarTexto >> return " ")
         ]
 
